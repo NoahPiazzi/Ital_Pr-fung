@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2. Amore e amicizia • Esame Orale Italiano</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- TOP NAVIGATION -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <nav class="nav-links" aria-label="Moduli esame">
+        <a href="1-overtourism.html" class="nav-link">1. Overtourism</a>
+        <a href="2-amore-tecnologia.html" class="nav-link active">2. Amore &amp; Tech</a>
+        <a href="3-il-mister.html" class="nav-link">3. Il Mister</a>
+        <a href="4-pro-o-contro.html" class="nav-link">4. Pro o Contro</a>
+        <a href="5-impostori.html" class="nav-link">5. Impostori</a>
+      </nav>
+
+      <div class="timer-widget" title="Prüfungs-Timer zum Üben">
+        <span class="timer-display" id="timer-display">01:00</span>
+        <button class="timer-btn" data-time="60">1'</button>
+        <button class="timer-btn" data-time="180">3'</button>
+        <button class="timer-btn" data-time="240">4'</button>
+        <button class="timer-btn primary" id="timer-start">Start</button>
+        <button class="timer-btn" id="timer-reset">↺</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO BANNER -->
+    <section class="hero hero-rose">
+      <span class="hero-tag">Modulo 2 • I Trimestre • Testo Argomentativo</span>
+      <h1>Amore e amicizia al tempo della tecnologia</h1>
+      <p>Guida per l'esposizione orale: mantenere la struttura argomentativa del testo (introduzione, aspetti positivi e negativi, conclusione) ed esprimere la propria opinione con esempi concreti.</p>
+    </section>
+
+    <!-- CHECKLISTE PRÜFUNGSANFORDERUNGEN -->
+    <section class="checklist-box">
+      <div class="checklist-title">🎯 Obiettivi per l'esame (Prof.ssa Ianeselli)</div>
+      <ul class="checklist-items">
+        <li>✅ Raccontare il testo <strong>mantenendo la struttura argomentativa</strong> (Introduzione → Pro → Contro → Conclusione)</li>
+        <li>✅ Usare le <strong>espressioni chiave</strong> sulle relazioni presenti nel testo</li>
+        <li>✅ Spiegare il <strong>proprio punto di vista</strong> con argomenti efficaci ed esempi pertinenti</li>
+      </ul>
+    </section>
+
+    <!-- 1. STRUKTUR DES ARGUMENTATIVEN TEXTES -->
+    <section class="section">
+      <div class="section-header">
+        <h2>1. Struttura del testo argomentativo (da seguire nell'esposizione)</h2>
+        <span class="badge badge-b2">Ordine obbligatorio</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- INTRO -->
+        <article class="card">
+          <div class="card-title">1️⃣ Introduzione (Il tema generale)</div>
+          <div class="card-sub">Come è cambiato il modo di relazionarsi nell'era digitale</div>
+          <ul class="bullet-list">
+            <li><strong>Trasformazione profonda:</strong> Nell'era digitale, amore e amicizia sono cambiati in modo significativo.</li>
+            <li><strong>Doppio volto della tecnologia:</strong> Da un lato ha introdotto nuovi modi di connessione e comunicazione; dall'altro ha portato nuove sfide, rischi e dinamiche complesse nei rapporti umani.</li>
+          </ul>
+        </article>
+
+        <!-- CONCLUSIONE -->
+        <article class="card card-amber">
+          <div class="card-title">4️⃣ Conclusione (Il messaggio finale del testo)</div>
+          <div class="card-sub">Sintesi ed equilibrio finale</div>
+          <ul class="bullet-list">
+            <li><strong>Terreno complesso:</strong> L'amore e l'amicizia online possono regalare emozioni intense e legami significativi, ma nascondono anche delusioni e tradimenti.</li>
+            <li><strong>Ciò che conta davvero:</strong> Nonostante la tecnologia, ogni relazione umana autentica richiede sempre <strong>impegno, sincerità e fiducia reciproca</strong>.</li>
+          </ul>
+        </article>
+
+        <!-- PRO -->
+        <article class="card card-pro">
+          <div class="card-title">2️⃣ Aspetti positivi (Opportunità e vantaggi)</div>
+          <div class="card-sub">Cosa rende attraente e utile la connessione online</div>
+
+          <div class="arg-item">
+            <div class="arg-heading">Dal «colpo di fulmine» al contatto istantaneo</div>
+            <p class="arg-quote">Chat e app di incontri rendono possibile il <strong>«colpo di fulmine virtuale»</strong>: ci si può innamorare o provare un'attrazione anche a distanza, senza essersi mai visti di persona.</p>
+          </div>
+
+          <div class="arg-item">
+            <div class="arg-heading">Leggerezza e intrattenimento</div>
+            <p class="arg-quote">Può nascere una semplice <strong>cotta</strong> passeggera tramite foto o parole su un profilo; <strong>flirtare</strong> online diventa una forma di gioco e attenzione senza dover iniziare subito una relazione seria.</p>
+          </div>
+
+          <div class="arg-item">
+            <div class="arg-heading">Affinità profonda e interessi comuni</div>
+            <p class="arg-quote">Scoprendo passioni condivise, ci si sente <strong>sulla stessa lunghezza d'onda</strong> e si può arrivare a credere di aver trovato l'<strong>anima gemella</strong>.</p>
+          </div>
+        </article>
+
+        <!-- CONTRA -->
+        <article class="card card-contra">
+          <div class="card-title">3️⃣ Aspetti negativi (Insidie, delusioni e rischi)</div>
+          <div class="card-sub">I problemi nascosti dietro lo schermo</div>
+
+          <div class="arg-item">
+            <div class="arg-heading">Illusione vs. realtà (La delusione)</div>
+            <p class="arg-quote">Le aspettative create online spesso non corrispondono alla realtà: quando ci si incontra davvero, la persona può essere diversa, la relazione <strong>si raffredda</strong>, si capisce di <strong>non essere fatti l'uno per l'altro</strong> e ci si lascia.</p>
+          </div>
+
+          <div class="arg-item">
+            <div class="arg-heading">Crisi dei matrimoni e relazioni parallele</div>
+            <p class="arg-quote">Anche chi è sposato può innamorarsi follemente di qualcuno conosciuto online, <strong>mettendo a dura prova il matrimonio</strong> con forti conflitti interni.</p>
+          </div>
+
+          <div class="arg-item">
+            <div class="arg-heading">Tradimenti e bugie più facili</div>
+            <p class="arg-quote">La tecnologia rende più semplice nascondere l'infedeltà; tuttavia, prima o poi <strong>la verità viene sempre a galla</strong>, causando rotture definitive e profonde delusioni.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2. CONNETTIVI FÜR ARGUMENTATIVEN TEXT -->
+    <section class="section">
+      <div class="callout callout-purple">
+        <div class="callout-title">🔗 Connettivi ideali per mantenere la struttura all'orale</div>
+        <div class="grid-2" style="margin-top: 0.5rem;">
+          <ul class="bullet-list">
+            <li><strong>Introduzione:</strong> <em>«Il testo analizza come...» / «Al giorno d'oggi è evidente che...»</em></li>
+            <li><strong>Aspetti positivi:</strong> <em>«Da un lato, la tecnologia offre...» / «In primo luogo va riconosciuto che...»</em></li>
+          </ul>
+          <ul class="bullet-list">
+            <li><strong>Aspetti negativi:</strong> <em>«Dall'altro lato, però, esistono numerose insidie...» / «Tuttavia, quando ci si confronta con la realtà...»</em></li>
+            <li><strong>Conclusione:</strong> <em>«In conclusione, l'autore sottolinea che...» / «In sintesi, la tecnologia è solo uno strumento...»</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. EIGENE MEINUNG & BEISPIELE -->
+    <section class="section">
+      <div class="section-header">
+        <h2>2. Il tuo punto di vista: argomenti efficaci ed esempi</h2>
+        <span class="badge badge-both">Per la discussione finale</span>
+      </div>
+
+      <div class="grid-2">
+        <article class="card card-pro">
+          <div class="card-title">👍 Perché la tecnologia aiuta i rapporti</div>
+          <ul class="bullet-list">
+            <li><strong>Abbattere le distanze:</strong> Permette di mantenere vive amicizie e relazioni a distanza grazie a videochiamate e messaggi quotidiani.</li>
+            <li><strong>Superare la timidezza iniziale:</strong> Per chi è introverso è più facile rompere il ghiaccio dietro uno schermo e trovare persone con interessi di nicchia simili.</li>
+            <li><strong>Nuove opportunità sociali:</strong> Senza app o social, molte persone che lavorano molto o vivono in piccoli paesi farebbero fatica a conoscere gente nuova.</li>
+          </ul>
+          <div class="example-pill">
+            <strong>Esempio pertinente:</strong> «Un mio amico che si è trasferito all'estero per studiare riesce comunque a partecipare alla vita del nostro gruppo grazie alle chiamate di gruppo e ai messaggi vocali, oppure tramite comunità online di gaming o sport.»
+          </div>
+        </article>
+
+        <article class="card card-contra">
+          <div class="card-title">👎 Perché rischia di indebolirli</div>
+          <ul class="bullet-list">
+            <li><strong>Superficialità e «effetto catalogo»:</strong> Sulle app di incontri (es. Tinder) si giudica in un secondo da una foto, trattando le persone come prodotti sostituibili.</li>
+            <li><strong>Idealizzazione e filtri:</strong> Sui social tutti mostrano solo il lato migliore; ci si innamora di un'immagine costruita, non della persona reale.</li>
+            <li><strong>Mancanza di comunicazione reale:</strong> Fenomeni come il <em>ghosting</em> (sparire senza spiegazioni) sono facilissimi online, mentre dal vivo richiederebbero coraggio e rispetto.</li>
+          </ul>
+          <div class="example-pill">
+            <strong>Esempio pertinente:</strong> «Capita spesso di vedere coppie al ristorante che invece di parlare tra loro guardano continuamente il cellulare, oppure persone che interrompono una frequentazione semplicemente bloccando l'altro su WhatsApp.»
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. VOKABELLISTE -->
+    <section class="section">
+      <div class="section-header">
+        <h2>3. Vocabolario ed espressioni chiave sulle relazioni</h2>
+      </div>
+
+      <div class="toolbar">
+        <input type="text" class="search-input" placeholder="🔍 Cerca parola o significato (IT / DE)..." data-search-target="#vocab-amore tbody tr">
+        <button class="btn-outline" id="quiz-toggle">🧠 Quiz-Modus: Deutsch verdecken</button>
+      </div>
+
+      <div class="table-wrap" id="vocab-table-wrap">
+        <table class="vocab-table" id="vocab-amore">
+          <thead>
+            <tr>
+              <th style="width: 30%;">Espressione italiana</th>
+              <th style="width: 30%;">Traduzione tedesca</th>
+              <th style="width: 40%;">Contesto / Significato</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="vocab-it">l'amore a prima vista</td>
+              <td class="vocab-de">die Liebe auf den ersten Blick</td>
+              <td>Attrazione immediata nel momento in cui due persone si incontrano.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">il colpo di fulmine (virtuale)</td>
+              <td class="vocab-de">der (virtuelle) Blitzschlag / Liebe auf den ersten Blick</td>
+              <td>Innamorarsi istantaneamente tramite chat o app di incontri.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">la cotta (passeggera)</td>
+              <td class="vocab-de">die (vorübergehende) Schwärmerei / Verknalltheit</td>
+              <td>Un sentimento leggero e non ancora una relazione profonda.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">flirtare</td>
+              <td class="vocab-de">flirten</td>
+              <td>Cercare attenzioni ed emozioni leggere senza impegno serio.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">essere sulla stessa lunghezza d'onda</td>
+              <td class="vocab-de">auf derselben Wellenlänge sein</td>
+              <td>Avere le stesse passioni, interessi e modo di pensare.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">l'anima gemella</td>
+              <td class="vocab-de">der Seelenverwandte / die Seelenverwandte</td>
+              <td>La persona ritenuta perfetta e ideale per noi.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">l'intesa</td>
+              <td class="vocab-de">das blinde Verständnis / die Chemie</td>
+              <td>Armonia e complicità profonda tra due persone.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">l'amore a distanza</td>
+              <td class="vocab-de">die Fernbeziehung</td>
+              <td>Relazione tra persone che vivono lontane e comunicano online.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">mettere a dura prova (un matrimonio)</td>
+              <td class="vocab-de">(eine Ehe) auf eine harte Probe stellen</td>
+              <td>Creare una crisi grave e conflitti interni nella coppia.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">innamorarsi follemente</td>
+              <td class="vocab-de">sich unsterblich / wahnsinnig verlieben</td>
+              <td>Provare un sentimento fortissimo e travolgente.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">raffreddarsi (la relazione si raffredda)</td>
+              <td class="vocab-de">abkühlen (die Beziehung kühlt ab)</td>
+              <td>Quando l'entusiasmo iniziale sparisce davanti alla realtà.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">non essere fatti l'uno per l'altro</td>
+              <td class="vocab-de">nicht füreinander geschaffen sein</td>
+              <td>Capire di non essere compatibili nella vita reale.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">lasciarsi / la rottura definitiva</td>
+              <td class="vocab-de">sich trennen / der endgültige Bruch</td>
+              <td>Mettere fine a una relazione sentimentale.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">essere infedele / il tradimento</td>
+              <td class="vocab-de">untreu sein / der Betrug (Seitensprung)</td>
+              <td>Tradire la fiducia del partner (spesso più facile da nascondere online).</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">venire a galla (la verità)</td>
+              <td class="vocab-de">ans Licht kommen (die Wahrheit)</td>
+              <td>Alla fine le bugie vengono scoperte («la verità viene sempre a galla»).</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">nascondere insidie e delusioni</td>
+              <td class="vocab-de">Tücken und Enttäuschungen bergen</td>
+              <td>Espressione B2 per descrivere i rischi dietro un'apparenza perfetta.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">le aspettative vs. la realtà</td>
+              <td class="vocab-de">die Erwartungen vs. die Realität</td>
+              <td>Contrasto tra ciò che immaginiamo online e la vita vera.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">l'impegno e la fiducia reciproca</td>
+              <td class="vocab-de">das Engagement und das gegenseitige Vertrauen</td>
+              <td>Valori indispensabili per ogni legame duraturo.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FOOTER NAVIGATION -->
+    <footer class="page-footer">
+      <a href="1-overtourism.html" class="footer-btn">← 1. Overtourism</a>
+      <a href="3-il-mister.html" class="footer-btn">Prossimo modulo: 3. Il Mister →</a>
+    </footer>
+
+  </main>
+</body>
+</html>

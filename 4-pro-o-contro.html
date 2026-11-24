@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4. Pillole di italiano: Pro o Contro • Esame Orale</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- TOP NAVIGATION -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <nav class="nav-links" aria-label="Moduli esame">
+        <a href="1-overtourism.html" class="nav-link">1. Overtourism</a>
+        <a href="2-amore-tecnologia.html" class="nav-link">2. Amore &amp; Tech</a>
+        <a href="3-il-mister.html" class="nav-link">3. Il Mister</a>
+        <a href="4-pro-o-contro.html" class="nav-link active">4. Pro o Contro</a>
+        <a href="5-impostori.html" class="nav-link">5. Impostori</a>
+      </nav>
+
+      <div class="timer-widget" title="Prüfungs-Timer (1 Min. pro Thema!)">
+        <span class="timer-display" id="timer-display">01:00</span>
+        <button class="timer-btn" data-time="60">1'</button>
+        <button class="timer-btn" data-time="180">3'</button>
+        <button class="timer-btn" data-time="240">4'</button>
+        <button class="timer-btn primary" id="timer-start">Start</button>
+        <button class="timer-btn" id="timer-reset">↺</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO BANNER -->
+    <section class="hero hero-green">
+      <span class="hero-tag">Modulo 4 • I Trimestre • Gioco dell'oca (20 Temi)</span>
+      <h1>Pillole di italiano: Pro o Contro?</h1>
+      <p>Strumenti linguistici per discutere con scioltezza, connettivi essenziali e tutti i 20 temi del tabellone con argomenti Pro, Contro, esempi pertinenti e parole chiave.</p>
+    </section>
+
+    <!-- CHECKLISTE -->
+    <section class="checklist-box">
+      <div class="checklist-title">🎯 Obiettivi per l'esame (Prof.ssa Ianeselli)</div>
+      <ul class="checklist-items">
+        <li>✅ Esprimere la propria opinione su <strong>ciascuno dei 20 temi</strong> (circa <strong>1 minuto</strong> a tema)</li>
+        <li>✅ Parlare con <strong>espressione fluida e corretta</strong></li>
+        <li>✅ Usare le formule di accordo/disaccordo, i <strong>connettivi</strong> e almeno un esempio concreto</li>
+      </ul>
+    </section>
+
+    <!-- 1. DISKUSSIONS-BAUKASTEN -->
+    <section class="section">
+      <div class="section-header">
+        <h2>1. Come strutturare 1 minuto perfetto + Frasi utili</h2>
+        <span class="badge badge-b2">Formula 60 secondi</span>
+      </div>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">⏱️ La regola dei 4 passi in 60 secondi</div>
+        <div class="grid-3" style="margin-top:0.45rem;">
+          <div><strong>1. Posizione (10 sec.):</strong><br>Prendi subito posizione (a favore, contrario o posizione intermedia).</div>
+          <div><strong>2. Due motivi + 1 esempio (35 sec.):</strong><br>Usa <em>«In primo luogo...», «Inoltre...»</em> e aggiungi un caso reale (<em>«Ad esempio...»</em>).</div>
+          <div><strong>3. Sfumatura e chiusura (15 sec.):</strong><br>Riconosci l'altro punto di vista (<em>«Anche se capisco chi...»</em>) e concludi netto.</div>
+        </div>
+      </div>
+
+      <div class="grid-3">
+        <!-- FRASI DELL'INSEGNANTE -->
+        <article class="card card-pro">
+          <div class="card-title">👍 Accordo e posizione a favore</div>
+          <ul class="bullet-list">
+            <li><strong>Sono a favore di...</strong> (+ sostantivo/infinito)</li>
+            <li><strong>Penso che sia giusto / importante...</strong> (+ congiuntivo!)</li>
+            <li><strong>Concordo pienamente</strong> (con questa idea)</li>
+            <li><strong>Condivido questa tesi</strong></li>
+            <li><strong>I dati mostrano che...</strong></li>
+          </ul>
+        </article>
+
+        <article class="card card-contra">
+          <div class="card-title">👎 Disaccordo e posizione contraria</div>
+          <ul class="bullet-list">
+            <li><strong>Sono contrario/a a...</strong></li>
+            <li><strong>Penso che sia sbagliato...</strong></li>
+            <li><strong>Non concordo affatto</strong></li>
+            <li><strong>Non sono assolutamente d'accordo</strong></li>
+            <li><strong>Non credo che sia corretto...</strong> (+ congiuntivo!)</li>
+          </ul>
+        </article>
+
+        <article class="card card-amber">
+          <div class="card-title">⚖️ Posizione equilibrata &amp; Connettivi</div>
+          <ul class="bullet-list">
+            <li><strong>È un tema / argomento complesso, ma...</strong></li>
+            <li><strong>Non è facile prendere una posizione, ma...</strong></li>
+            <li><strong>In parte sono d'accordo, ma...</strong></li>
+            <li><strong>Capisco chi è a favore / contrario, ma io ritengo che...</strong></li>
+            <li><strong>Connettivi chiave:</strong> <em>innanzitutto, inoltre, tuttavia, d'altra parte, di conseguenza, in definitiva.</em></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2. ALLE 20 THEMEN VOM SPIELBRETT -->
+    <section class="section">
+      <div class="section-header">
+        <h2>2. Tutti i 20 temi del gioco dell'oca (Pro, Contro &amp; Esempi)</h2>
+      </div>
+
+      <div class="toolbar">
+        <input type="text" class="search-input" placeholder="🔍 Cerca un tema (es. AI, cinema, fast fashion, caccia)..." data-search-target=".topic-card">
+        <div class="filter-pills">
+          <button class="pill-btn active" data-filter="all">Tutti (20)</button>
+          <button class="pill-btn" data-filter="scuola">Scuola &amp; Lavoro (4)</button>
+          <button class="pill-btn" data-filter="tech">Tech &amp; Media (5)</button>
+          <button class="pill-btn" data-filter="ambiente">Ambiente &amp; Animali (5)</button>
+          <button class="pill-btn" data-filter="societa">Società &amp; Salute (6)</button>
+        </div>
+      </div>
+
+      <div class="grid-2">
+
+        <!-- 1. VAPING -->
+        <article class="card topic-card" data-category="societa">
+          <div class="card-title">1. Vaping e sigarette elettroniche <span class="badge badge-text">Società</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Possono aiutare i fumatori adulti a ridurre o smettere con le sigarette tradizionali (meno catrame).</li>
+              <li>Non lasciano cattivo odore su vestiti e ambienti.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>I gusti dolci e i colori attirano molti adolescenti creando dipendenza precoce da nicotina.</li>
+              <li>Contengono comunque sostanze chimiche nocive per i polmoni e inquinano (usa e getta con batterie al litio).</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Davanti alle scuole moltissimi ragazzi usano le puff usa e getta sottovalutando i rischi. • <em>la dipendenza</em> (Sucht), <em>usa e getta</em> (Einweg-), <em>dannoso per la salute</em> (gesundheitsschädlich).</div>
+        </article>
+
+        <!-- 2. UNIFORME SCOLASTICA -->
+        <article class="card topic-card" data-category="scuola">
+          <div class="card-title">2. Uniforme scolastica <span class="badge badge-text">Scuola</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Riduce le differenze sociali ed economiche: evita il bullismo legato ai vestiti firmati.</li>
+              <li>Crea senso di appartenenza alla scuola e fa risparmiare tempo la mattina.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Limita la libertà individuale e l'espressione della personalità dei giovani.</li>
+              <li>Acquistare diverse divise può essere comunque un costo aggiuntivo per le famiglie.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Nel Regno Unito o in Giappone è normale, mentre in Italia si preferisce la libertà di stile. • <em>la divisa</em> (Uniform), <em>i capi firmati</em> (Markenkleidung), <em>l'uguaglianza</em> (Gleichheit).</div>
+        </article>
+
+        <!-- 3. TEST SUGLI ANIMALI -->
+        <article class="card topic-card" data-category="ambiente">
+          <div class="card-title">3. Test sugli animali <span class="badge badge-text">Animali</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>In medicina hanno permesso di scoprire vaccini, antibiotici e cure che salvano milioni di vite umane.</li>
+              <li>In alcuni casi non esistono ancora modelli computerizzati in grado di replicare un intero organismo.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>È eticamente inaccettabile causare sofferenza ad esseri viventi, soprattutto per cosmetici o prodotti non essenziali.</li>
+              <li>Oggi esistono metodi alternativi moderni (colture cellulari, simulazioni digitali) e i risultati sugli animali non sono sempre validi per l'uomo.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Nell'UE i test sugli animali per i cosmetici sono già vietati (marchio <em>cruelty-free</em>). • <em>la sperimentazione animale</em> (Tierversuche), <em>eticamente inaccettabile</em>, <em>i metodi alternativi</em>.</div>
+        </article>
+
+        <!-- 4. RICERCA SU GOOGLE DURANTE UN ESAME -->
+        <article class="card topic-card" data-category="scuola">
+          <div class="card-title">4. Ricerca su Google durante un esame <span class="badge badge-text">Scuola</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Nel mondo del lavoro reale nessuno lavora senza internet: conta saper trovare, verificare e collegare le informazioni, non memorizzare date.</li>
+              <li>Riduce l'ansia mnemonica se l'esame chiede ragionamento e pensiero critico.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Senza una base solida di conoscenze nella propria testa non si riesce nemmeno a distinguere una fonte affidabile da una falsa.</li>
+              <li>Si rischia di copiare passivamente (o usare l'IA) senza aver davvero capito nulla.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Negli esami «open book» universitari si possono usare materiali, ma le domande richiedono analisi personale. • <em>memorizzare a pappagallo</em> (stumpf auswendig lernen), <em>fonte affidabile</em> (zuverlässige Quelle).</div>
+        </article>
+
+        <!-- 5. AUMENTO ETÀ PENSIONABILE A 70 -->
+        <article class="card topic-card" data-category="societa">
+          <div class="card-title">5. Aumento dell'età pensionabile a 70 anni <span class="badge badge-text">Società</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>L'aspettativa di vita è cresciuta molto: senza lavorare più a lungo, il sistema pensionistico rischierebbe di collassare.</li>
+              <li>Alcuni professionisti (medici, professori) a 65 anni hanno ancora esperienza preziosa da trasmettere.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>È ingiusto per chi svolge lavori fisici pesanti (muratori, operai, infermieri): a 70 anni il corpo non regge.</li>
+              <li>Blocca il ricambio generazionale: i giovani faticano a trovare lavoro stabile se i posti restano occupati.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Un impiegato d'ufficio può forse lavorare fino a 70 anni, ma un carpentiere o un'operatrice sanitaria no. • <em>la pensione</em> (Rente), <em>lavori usuranti</em> (körperlich verschleißende Berufe), <em>ricambio generazionale</em>.</div>
+        </article>
+
+        <!-- 6. PUBBLICIZZARE CIBI NON SANI -->
+        <article class="card topic-card" data-category="societa">
+          <div class="card-title">6. Si dovrebbero pubblicizzare i cibi non sani? <span class="badge badge-text">Salute</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Le aziende hanno libertà commerciale e ognuno è responsabile delle proprie scelte alimentari.</li>
+              <li>Vietare la pubblicità non elimina il problema se manca l'educazione alimentare in famiglia e a scuola.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Gli spot di merendine, fast food e bevande zuccherate colpiscono soprattutto bambini e ragazzi, favorendo obesità e diabete.</li>
+              <li>Come per fumo e alcol, servono limiti alla pubblicità (almeno nelle fasce orarie per minori) per tutelare la salute pubblica.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Nel Regno Unito è vietata la pubblicità del «cibo spazzatura» in TV prima delle 21:00. • <em>cibo spazzatura</em> (Junkfood), <em>obesità infantile</em>, <em>educazione alimentare</em>.</div>
+        </article>
+
+        <!-- 7. FAST FASHION -->
+        <article class="card topic-card" data-category="ambiente">
+          <div class="card-title">7. Fast fashion <span class="badge badge-text">Ambiente</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Rende la moda accessibile a prezzi bassi anche a studenti e famiglie con un budget limitato.</li>
+              <li>Offre grande varietà di stili e tendenze aggiornate rapidamente.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Ha un impatto ambientale enorme: consumo d'acqua altissimo, microplastiche e montagne di rifiuti tessili.</li>
+              <li>Spesso si basa sullo sfruttamento dei lavoratori nei Paesi in via di sviluppo e sulla scarsa qualità (vestiti che durano poche settimane).</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Piattaforme come Shein o Zara lanciano migliaia di capi nuovi a settimana; meglio comprare meno ma di qualità o usare l'usato (Vinted). • <em>sfruttamento</em> (Ausbeutung), <em>abiti di seconda mano</em>, <em>usa e getta</em>.</div>
+        </article>
+
+        <!-- 8. LIBERTÀ DI PAROLA -->
+        <article class="card topic-card" data-category="societa">
+          <div class="card-title">8. Libertà di parola <span class="badge badge-text">Società</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO (Massima libertà)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>È il pilastro fondamentale di ogni democrazia: permette di criticare il potere, esprimere idee diverse e far progredire la società.</li>
+              <li>Limitare troppo le opinioni rischia di trasformarsi in censura politica.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO (Servono limiti)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>La libertà di parola non può diventare libertà di offendere, diffamare o incitare all'odio e alla violenza (<em>hate speech</em>).</li>
+              <li>Sui social la diffusione di bugie pericolose (<em>fake news</em> mediche o politiche) danneggia la collettività.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> La propria libertà finisce dove inizia il rispetto e la dignità degli altri, soprattutto contro il cyberbullismo. • <em>incitamento all'odio</em> (Hassrede), <em>censura</em>, <em>diritto fondamentale</em>.</div>
+        </article>
+
+        <!-- 9. VIDEOGIOCHI COMPETITIVI -->
+        <article class="card topic-card" data-category="tech">
+          <div class="card-title">9. Videogiochi competitivi (Esports) <span class="badge badge-text">Tech</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Allenano riflessi, pensiero strategico, lavoro di squadra e spesso l'inglese.</li>
+              <li>Gli esports sono ormai un settore professionale reale con tornei, sponsor e carriere per giocatori e organizzatori.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Giocare troppe ore favorisce sedentarietà, problemi di vista/sonno e isolamento sociale.</li>
+              <li>L'alta competitività può generare rabbia, frustrazione e dipendenza (o spese eccessive per microtransazioni).</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Come in ogni sport, tutto sta nella misura: 1–2 ore con gli amici su Discord sono sane, 10 ore al giorno no. • <em>gioco di squadra</em>, <em>sedentarietà</em> (Bewegungsmangel), <em>riflessi pronti</em>.</div>
+        </article>
+
+        <!-- 10. SMARTWORKING -->
+        <article class="card topic-card" data-category="scuola">
+          <div class="card-title">10. Smartworking (Lavoro agile / da casa) <span class="badge badge-text">Lavoro</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Risparmia tempo e soldi per gli spostamenti, riduce il traffico e le emissioni di CO₂.</li>
+              <li>Migliora l'equilibrio tra vita privata e lavoro (<em>work-life balance</em>) e spesso aumenta la produttività.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Rischia di isolare il lavoratore, riducendo lo spirito di squadra e la collaborazione spontanea coi colleghi.</li>
+              <li>Confonde i confini tra casa e ufficio: si finisce per lavorare anche la sera (manca il diritto alla disconnessione).</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> La soluzione ideale è il modello ibrido: 2–3 giorni in ufficio per il contatto umano e 2 giorni da casa. • <em>pendolarismo</em> (Pendeln), <em>lavoro ibrido</em>, <em>isolamento</em>.</div>
+        </article>
+
+        <!-- 11. ANDARE AL CINEMA -->
+        <article class="card topic-card" data-category="societa">
+          <div class="card-title">11. Andare al cinema (vs. streaming a casa) <span class="badge badge-text">Società</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Offre un'esperienza immersiva unica: grande schermo, audio potente e zero distrazioni dal cellulare.</li>
+              <li>È un momento sociale e culturale da condividere con amici o partner fuori casa.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>I biglietti e gli snack sono diventati molto costosi rispetto a un abbonamento mensile in streaming.</li>
+              <li>A casa si ha più comodità, si può mettere in pausa e scegliere la lingua originale liberamente.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Per film spettacolari come <em>Dune</em> o <em>Oppenheimer</em> il cinema resta insostituibile; per una commedia leggera basta Netflix. • <em>esperienza immersiva</em>, <em>grande schermo</em>, <em>caro / costoso</em>.</div>
+        </article>
+
+        <!-- 12. FONDI RICERCA SCIENTIFICA -->
+        <article class="card topic-card" data-category="tech">
+          <div class="card-title">12. Fondi destinati alla ricerca scientifica <span class="badge badge-text">Scienza</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO (Aumentarli)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>È l'unico modo per trovare cure contro malattie gravi, sviluppare energie pulite e prevenire crisi future.</li>
+              <li>Investire nella ricerca trattiene i giovani cervelli (evita la «fuga dei cervelli» all'estero) e crea innovazione economica.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO / CRITICA</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>I bilanci pubblici sono limitati: alcuni ritengono prioritario investire subito in bisogni immediati (ospedali, scuole, stipendi).</li>
+              <li>I risultati della ricerca di base richiedono molti anni e non sempre danno ritorni immediati (es. missioni spaziali costose).</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Durante il Covid abbiamo visto quanto siano stati decisivi gli investimenti passati sulla ricerca dei vaccini. • <em>fuga dei cervelli</em> (Brain Drain), <em>ricerca di base</em>, <em>investimento a lungo termine</em>.</div>
+        </article>
+
+        <!-- 13. CAMBIAMENTO CLIMATICO -->
+        <article class="card topic-card" data-category="ambiente">
+          <div class="card-title">13. Cambiamento climatico globale (Come affrontarlo?) <span class="badge badge-text">Ambiente</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO (Misure urgenti e vincolanti)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>L'evidenza scientifica è chiara: ondate di calore, scioglimento dei ghiacciai e alluvioni colpiscono già oggi anche le Alpi.</li>
+              <li>Investire nelle energie rinnovabili riduce la dipendenza energetica e crea nuovi lavori verdi.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CRITICHE alle misure attuali</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Alcune transizioni imposte troppo in fretta (es. auto elettriche obbligatorie) pesano economicamente su famiglie e imprese europee.</li>
+              <li>Se solo l'Europa riduce le emissioni mentre giganti industriali come Cina, USA o India continuano a inquinare, l'effetto resta parziale.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Anche in Alto Adige vediamo estati sempre più calde e ghiacciai che si ritirano a vista d'occhio. • <em>energie rinnovabili</em>, <em>emissioni di CO₂</em>, <em>scioglimento dei ghiacciai</em>.</div>
+        </article>
+
+        <!-- 14. TEENAGERS E SOCIAL MEDIA -->
+        <article class="card topic-card" data-category="tech">
+          <div class="card-title">14. Teenagers autorizzati all'uso dei social media? <span class="badge badge-text">Tech</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Permettono di restare in contatto con gli amici, esprimere creatività e informarsi sul mondo.</li>
+              <li>Un divieto totale fino a 16 o 18 anni è facile da aggirare e non insegna ai ragazzi a gestire i rischi.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Gli algoritmi creano dipendenza, riducono la concentrazione nello studio e peggiorano il sonno.</li>
+              <li>Espongono i più giovani a cyberbullismo, paragoni estetici irreali e problemi di autostima.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> L'Australia ha proposto il divieto sotto i 16 anni; meglio però un'età minima reale (14 anni) accompagnata da educazione digitale. • <em>autostima</em> (Selbstwertgefühl), <em>dipendenza da smartphone</em>, <em>educazione digitale</em>.</div>
+        </article>
+
+        <!-- 15. SHOPPING ONLINE -->
+        <article class="card topic-card" data-category="tech">
+          <div class="card-title">15. Shopping online <span class="badge badge-text">Tech</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Comodo, aperto 24 ore su 24, permette di confrontare prezzi e recensioni in pochi secondi.</li>
+              <li>Offre una scelta enorme, utile soprattutto per chi abita in paesi piccoli o cerca articoli specifici.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Mette in crisi i negozi locali e svuota i centri storici delle nostre città.</li>
+              <li>Aumenta il traffico dei corrieri, gli imballaggi di cartone/plastica e gli acquisti impulsivi (con tantissimi resi).</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Spesso si ordinano tre taglie dello stesso paio di scarpe per poi restituirne due, generando un grande spreco di trasporti. • <em>negozio di quartiere</em>, <em>il reso</em> (Retoure), <em>imballaggi</em> (Verpackungen).</div>
+        </article>
+
+        <!-- 16. PROFESSORI RESPONSABILI DEI VOTI BASSI -->
+        <article class="card topic-card" data-category="scuola">
+          <div class="card-title">16. Professori responsabili dei voti bassi nelle verifiche? <span class="badge badge-text">Scuola</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">SÌ (In parte sì)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Se quasi tutta una classe prende un brutto voto, probabilmente la spiegazione non è stata chiara o la verifica era troppo difficile/mal calibrata.</li>
+              <li>Un buon insegnante sa motivare e adattare il metodo quando vede difficoltà diffuse.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">NO (La responsabilità è dello studente)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Il professore può spiegare benissimo, ma lo studio costante, l'attenzione in classe e la preparazione a casa dipendono dall'alunno.</li>
+              <li>Dare sempre la colpa ai docenti impedisce ai ragazzi di imparare dai propri errori e di assumersi responsabilità.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> È un lavoro di squadra: se un solo alunno va male, è colpa del suo scarso impegno; se l'80% è insufficiente, il docente deve rivedere la verifica. • <em>insufficienza</em> (ungenügende Note), <em>l'impegno</em> (Einsatz), <em>assumersi la responsabilità</em>.</div>
+        </article>
+
+        <!-- 17. RICICLARE OBBLIGATORIO -->
+        <article class="card topic-card" data-category="ambiente">
+          <div class="card-title">17. Riciclare: dovrebbe essere obbligatorio? <span class="badge badge-text">Ambiente</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">PRO</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Riduce drasticamente i rifiuti in discarica/inceneritore e permette di recuperare materie prime preziose (vetro, carta, alluminio).</li>
+              <li>Senza obbligo e controlli (o tariffe sui rifiuti indifferenziati), molte persone non si impegnerebbero per pigrizia.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">CONTRO / DIFFICOLTÀ</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Imporre multe rigide senza fornire prima bidoni comodi e un sistema di raccolta efficiente crea solo rabbia nei cittadini.</li>
+              <li>A volte le regole su cosa va dove sono troppo complicate e non tutto ciò che separiamo viene davvero riciclato dalle aziende.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> In Alto Adige la raccolta differenziata è già obbligatoria e funziona molto bene grazie alle isole ecologiche e ai centri di riciclaggio. • <em>raccolta differenziata</em> (Mülltrennung), <em>la multa</em> (Geldstrafe), <em>materie prime</em>.</div>
+        </article>
+
+        <!-- 18. INTELLIGENZA ARTIFICIALE MINACCIA -->
+        <article class="card topic-card" data-category="tech">
+          <div class="card-title">18. L'IA rappresenta una minaccia per l'umanità? <span class="badge badge-text">Tech</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">SÌ (È una minaccia / rischio serio)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Può sostituire milioni di posti di lavoro (non solo manuali, ma anche traduttori, programmatori, giornalisti).</li>
+              <li>Rende facilissimi <em>deepfake</em>, truffe, manipolazione politica e impigrisce il pensiero critico degli studenti.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">NO (È soprattutto un'opportunità)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Come ogni tecnologia, dipende da come l'uomo la usa e la regola con leggi etiche (es. <em>AI Act</em> europeo).</li>
+              <li>In medicina, scienza e industria velocizza diagnosi precoci, ricerca di farmaci e lavori ripetitivi, liberando tempo umano.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> L'IA non ci ruberà il lavoro da sola, ma chi sa usare l'IA in modo intelligente avrà un grande vantaggio su chi la ignora. • <em>sostituire i posti di lavoro</em>, <em>regolamentazione</em>, <em>strumento di supporto</em>.</div>
+        </article>
+
+        <!-- 19. VIETARE LA CACCIA -->
+        <article class="card topic-card" data-category="ambiente">
+          <div class="card-title">19. È giusto vietare la caccia agli animali selvatici? <span class="badge badge-text">Animali</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">SÌ (Vietarla)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Oggi non cacciamo più per sopravvivere: uccidere animali per «sport» o divertimento è crudele e anacronistico.</li>
+              <li>C'è rischio di incidenti per escursionisti e ciclisti nei boschi, oltre al bracconaggio verso specie protette.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">NO (Controllarla sì, vietarla no)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>In molte zone mancano i grandi predatori naturali: senza caccia controllata, cervi e cinghiali si moltiplicano troppo, danneggiando boschi, campi coltivati e causando incidenti stradali.</li>
+              <li>I cacciatori seri collaborano con i forestali al monitoraggio della fauna e all'equilibrio dell'ecosistema.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Nelle nostre valli alpine i cacciatori hanno quote precise per mantenere sano il bosco ed evitare danni alle giovani piante. • <em>specie protetta</em>, <em>equilibrio dell'ecosistema</em>, <em>caccia controllata</em>.</div>
+        </article>
+
+        <!-- 20. IMMIGRAZIONE BENE O MALE -->
+        <article class="card topic-card" data-category="societa">
+          <div class="card-title">20. L'immigrazione è un bene o un male per un Paese? <span class="badge badge-text">Società</span></div>
+          <div class="arg-item">
+            <span class="badge badge-pro">UN BENE (Opportunità se gestita)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>In Paesi che invecchiano e fanno pochi figli (come l'Italia), i lavoratori stranieri sono essenziali per agricoltura, turismo, industria e assistenza agli anziani.</li>
+              <li>Porta arricchimento culturale, nuovi punti di vista e contribuisce al sistema fiscale e pensionistico.</li>
+            </ul>
+          </div>
+          <div class="arg-item">
+            <span class="badge badge-contra">PROBLEMI (Se non regolata)</span>
+            <ul class="bullet-list" style="margin-top:0.35rem;">
+              <li>Un flusso incontrollato senza piani di integrazione crea tensioni sociali, quartieri isolati (ghetti) e lavoro nero.</li>
+              <li>Mancanza di conoscenza della lingua o difficoltà nel riconoscimento dei titoli di studio frena l'inserimento lavorativo.</li>
+            </ul>
+          </div>
+          <div class="example-pill"><strong>Esempio &amp; Lessico:</strong> Negli alberghi e nei cantieri dell'Alto Adige moltissime aziende cercano personale e non riuscirebbero a lavorare senza manodopera straniera ben integrata. • <em>integrazione</em>, <em>calo demografico</em> (Geburtenrückgang), <em>manodopera</em> (Arbeitskräfte).</div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- FOOTER NAVIGATION -->
+    <footer class="page-footer">
+      <a href="3-il-mister.html" class="footer-btn">← 3. Il Mister</a>
+      <a href="5-impostori.html" class="footer-btn">Prossimo modulo: 5. Impostori senza sindrome →</a>
+    </footer>
+
+  </main>
+</body>
+</html>

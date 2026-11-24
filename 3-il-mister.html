@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3. Il Mister • Esame Orale Italiano</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- TOP NAVIGATION -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <nav class="nav-links" aria-label="Moduli esame">
+        <a href="1-overtourism.html" class="nav-link">1. Overtourism</a>
+        <a href="2-amore-tecnologia.html" class="nav-link">2. Amore &amp; Tech</a>
+        <a href="3-il-mister.html" class="nav-link active">3. Il Mister</a>
+        <a href="4-pro-o-contro.html" class="nav-link">4. Pro o Contro</a>
+        <a href="5-impostori.html" class="nav-link">5. Impostori</a>
+      </nav>
+
+      <div class="timer-widget" title="Prüfungs-Timer zum Üben">
+        <span class="timer-display" id="timer-display">03:00</span>
+        <button class="timer-btn" data-time="60">1'</button>
+        <button class="timer-btn" data-time="180">3'</button>
+        <button class="timer-btn" data-time="240">4'</button>
+        <button class="timer-btn" data-time="300">5'</button>
+        <button class="timer-btn primary" id="timer-start">Start</button>
+        <button class="timer-btn" id="timer-reset">↺</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+      <span class="hero-tag">Modulo 3 • I Trimestre • Marco Lodoli</span>
+      <h1>Il Mister: Fioretto e suo padre</h1>
+      <p>Dossier completo per entrambi: trama breve con finale del libro, Roleplay guidato (<span style="background:rgba(220,38,38,0.85); padding:2px 7px; border-radius:5px; font-weight:700;">PADRE = Tu</span> vs <span style="background:rgba(2,132,199,0.85); padding:2px 7px; border-radius:5px; font-weight:700;">FIORETTO = Collega</span>), struttura del TED-Talk (3–5') e lessico.</p>
+    </section>
+
+    <!-- CHECKLISTE PRÜFUNGSANFORDERUNGEN -->
+    <section class="checklist-box">
+      <div class="checklist-title">🎯 Obiettivi per l'esame (Prof.ssa Ianeselli)</div>
+      <ul class="checklist-items">
+        <li>✅ Raccontare <strong>brevemente</strong> la storia (dall'infanzia al rigore finale)</li>
+        <li>✅ Svolgere il <strong>Roleplay</strong> in coppia (<strong>almeno 3 minuti</strong>)</li>
+        <li>✅ Argomentare in un <strong>«TED» di 3–5 minuti</strong> sull'importanza per i giovani di realizzare i propri sogni</li>
+        <li>✅ Spiegare il <strong>proprio punto di vista</strong> con argomenti efficaci ed esempi pertinenti</li>
+      </ul>
+    </section>
+
+    <!-- 1. RIASSUNTO DELLA STORIA -->
+    <section class="section">
+      <div class="section-header">
+        <h2>1. Riassunto breve della storia (Punti chiave)</h2>
+        <span class="badge badge-both">Per entrambi</span>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="card-title">🏟️ 1. Il primo stadio: nasce l'odio</div>
+          <ul class="bullet-list">
+            <li>Fioretto è bambino e va allo stadio con il padre per la prima volta.</li>
+            <li>La sciarpa al collo è troppo stretta: <strong>gli sembra di soffocare</strong>.</li>
+            <li>Il padre si trasforma: urla parolacce e insulta l'arbitro con violenza (lo colpisce perfino col gomito).</li>
+            <li>Il bambino vuole tornare a casa per <strong>finire i compiti</strong> e preferisce guardare <strong>le nuvole a forma di cane (Toto)</strong> invece della partita.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-title">🚿 2. L'inferno nello spogliatoio</div>
+          <ul class="bullet-list">
+            <li>Il padre lo iscrive alla squadra giovanile del quartiere.</li>
+            <li>L'ambiente è rozzo e aggressivo: i ragazzi più grandi fanno bullismo.</li>
+            <li>I compagni <strong>si pisciavano addosso per dispetto</strong>, sporcavano le borse di fango e rubavano le mutande.</li>
+            <li>Fioretto si isola: non parla con nessuno e odia questo clima volgare, giocando solo per <strong>far tacere il padre</strong> aggrappato alla rete.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-title">⚽ 3. Il talento e il soprannome «Fioretto»</div>
+          <ul class="bullet-list">
+            <li>Ha un <strong>talento naturale incredibile</strong>: capisce sempre prima dove arriverà la palla e segna con precisione (come la spada della scherma).</li>
+            <li>A 16 anni esordisce in Primavera, poi segna subito al debutto in <strong>Serie A</strong> sotto la pioggia.</li>
+            <li>Il padre si allena con lui (fascetta di spugna e guanti arancioni), conserva il primo articolo nel portafoglio <strong>come una reliquia</strong> e lo spinge a lasciare la scuola (<em>«il diploma si compra più avanti»</em>).</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-title">💥 4. La prigione a 17 anni e i dieci anni in Serie A</div>
+          <ul class="bullet-list">
+            <li><strong>Disagio e solitudine:</strong> Scarpe bullonate che fanno venire le vesciche, gomitate degli avversari, compagni che parlano solo di belle macchine e donne. Si sente <strong>recintato come un animale</strong> e vorrebbe solo studiare e passeggiare in città.</li>
+            <li><strong>10 anni da «sonnambulo»:</strong> Diventa 4 volte capocannoniere e centravanti della Nazionale, ma vive senza volontà propria.</li>
+            <li><strong>Controllo totale:</strong> Il padre compra villa e Mercedes coi suoi soldi, entra negli spogliatoi e gli proibisce perfino il motorino (<em>«d'accordo mister»</em>).</li>
+          </ul>
+        </article>
+
+        <article class="card span-2 card-amber">
+          <div class="card-title">🥅 5. Il finale del racconto: il rigore ai Mondiali (Fondamentale!)</div>
+          <ul class="bullet-list">
+            <li>Il racconto si apre e si chiude all'<strong>ultimo minuto della finale dei Mondiali</strong>: Fioretto è sul dischetto per tirare il rigore decisivo davanti a tutto il mondo e al padre che già grida <em>«rete! abbiamo vinto, ho vinto!»</em>.</li>
+            <li><strong>L'atto di liberazione:</strong> Stanco di aver corso per anni per realizzare il sogno di un altro, sceglie consapevolmente di <strong>tirare il rigore sopra la traversa, «nel vento largo dell'idiozia»</strong>. È l'unico modo per regolare i conti col padre e riprendersi finalmente la propria libertà.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2. ROLEPLAY PADRE VS FIORETTO -->
+    <section class="section">
+      <div class="section-header">
+        <h2>2. Roleplay (almeno 3 minuti): Confronto Padre vs. Fioretto</h2>
+        <div>
+          <span class="badge badge-fio">Fioretto = Collega</span>
+          <span class="badge badge-pad">Padre = Tu</span>
+        </div>
+      </div>
+
+      <div class="callout callout-blue">
+        <div class="callout-title">🎭 Situazione e obiettivi dei due ruoli</div>
+        <div class="grid-2" style="margin-top:0.4rem;">
+          <div>
+            <span class="badge badge-fio">FIORETTO (Collega)</span>
+            <p style="font-size:0.9rem; margin-top:0.3rem;">Ragazzo tranquillo e sensibile. Non vuole deludere o ferire il padre, ma deve fargli capire con fermezza che il calcio non lo rende felice, che vuole studiare, uscire con gli amici e vivere una vita normale.</p>
+          </div>
+          <div>
+            <span class="badge badge-pad">PADRE (Tu)</span>
+            <p style="font-size:0.9rem; margin-top:0.3rem;">Ama il figlio, ma è un fanatico accecato dal calcio. Sa che Fioretto ha un dono unico per fama, gloria e soldi. Non riesce nemmeno a concepire che il calcio possa non piacere: per lui è il sogno più grande.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <!-- KARTE FIORETTO -->
+        <article class="card card-fio">
+          <div class="card-title">
+            <span>🔵 Argomenti di FIORETTO (17 anni)</span>
+            <span class="badge badge-fio">Collega</span>
+          </div>
+          <div class="card-sub">Vuole lasciare il calcio per studiare e vivere libero</div>
+
+          <div class="arg-item">
+            <div class="arg-heading">1. Zero passione personale</div>
+            <p class="arg-quote">«Non gioco per me. Ho fatto gol solo per farti felice e per farti tacere a bordo campo.»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">2. Il campo è una gabbia</div>
+            <p class="arg-quote">«Quel rettangolo verde mi soffoca. Mi sento recintato come un animale, preferisco la natura e la libertà.»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">3. Dolore e violenza fisica</div>
+            <p class="arg-quote">«I difensori mi spaccano le labbra a gomitate. Ho i piedi pieni di vesciche per le scarpe bullonate.»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">4. Spogliatoio volgare e vuoto</div>
+            <p class="arg-quote">«Fin da piccolo ho visto solo cattiverie e bullismo. Parlano solo di donne e motori: non fa per me.»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">5. Valore reale dello studio</div>
+            <p class="arg-quote">«Non voglio un diploma finto comprato coi soldi. Voglio studiare davvero e andare all'università.»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">6. Rischio infortuni gravissimi</div>
+            <p class="arg-quote">«Basta un ginocchio rotto a 18 anni e la carriera è finita. Senza studio, cosa mi rimane in mano?»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">7. Bisogno di vita normale</div>
+            <p class="arg-quote">«Voglio fare i compiti con calma, uscire la domenica e avere amici veri, non rivali con cui lottare.»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">8. Il ricordo del soffocamento</div>
+            <p class="arg-quote">«Fin dal primo giorno allo stadio la tua sciarpa mi stringeva la gola. Tu gridavi, io volevo solo tornare a casa.»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">9. Non sono il tuo trofeo</div>
+            <p class="arg-quote">«Tieni il mio articolo nel portafoglio come una reliquia, ma io sono una persona, non un affare.»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">10. È il tuo sogno, non il mio</div>
+            <p class="arg-quote">«Ti voglio bene, papà, ma questo sogno è tuo. Mi hai mai chiesto una volta se io fossi felice?»</p>
+          </div>
+        </article>
+
+        <!-- KARTE PADRE -->
+        <article class="card card-pad">
+          <div class="card-title">
+            <span>🔴 Argomenti del PADRE</span>
+            <span class="badge badge-pad">Tu</span>
+          </div>
+          <div class="card-sub">Vuole che continui: talento, soldi, riscatto e gloria</div>
+
+          <div class="arg-item">
+            <div class="arg-heading">1. Talento benedetto da Dio</div>
+            <p class="arg-quote">«Hai un dono unico nei piedi! Ti chiamano 'Fioretto' per la tua precisione. Sprecarlo è un peccato!»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">2. Il treno passa una volta sola</div>
+            <p class="arg-quote">«A 17 anni si decide tutto! I talent scout ti guardano ora. Se molli adesso, non torni più indietro.»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">3. Soldi e riscatto economico</div>
+            <p class="arg-quote">«La vita normale dà solo stipendi da fame. Col calcio puoi guadagnare milioni e sistemare tutta la famiglia!»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">4. Il sogno di ogni ragazzo</div>
+            <p class="arg-quote">«Tutti i giovani sognano la tua vita: fama, stadi pieni, belle macchine sportive e successo!»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">5. Lo studio si compra dopo</div>
+            <p class="arg-quote">«Il diploma è solo un pezzo di carta: si può prendere più avanti in una scuola privata pagando la retta!»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">6. Tutti i sacrifici fatti per te</div>
+            <p class="arg-quote">«Mi sono buttato nel fango con la fascetta e i guanti per allenarti! Ho perso la voce a gridare ogni domenica!»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">7. È solo paura della pressione</div>
+            <p class="arg-quote">«Sei solo spaventato prima del grande salto. È normale avere ansia, ma ci sono io a proteggerti.»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">8. La mediocrità di un ufficio</div>
+            <p class="arg-quote">«Vuoi finire chiuso in un ufficio triste tra le scartoffie? Tu sei nato per galoppare nelle praterie verdi!»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">9. Orgoglio di tutta la famiglia</div>
+            <p class="arg-quote">«Custodisco il tuo articolo come una reliquia! Al lavoro tutti sanno chi sei: non buttare via il nostro nome!»</p>
+          </div>
+          <div class="arg-item">
+            <div class="arg-heading">10. Ti spingo solo per amore</div>
+            <p class="arg-quote">«Faccio tutto questo solo per il tuo bene. Un giorno mi ringrazierai di non averti lasciato mollare.»</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- STRUMENTI LINGUISTICI & CONCLUSIONI -->
+      <div class="grid-3" style="margin-top: 1.15rem;">
+        <article class="card">
+          <div class="card-title">💬 Esprimere l'opinione</div>
+          <ul class="bullet-list">
+            <li><em>Secondo me...</em> (+ Indicativo!)</li>
+            <li><em>Dal mio punto di vista...</em></li>
+            <li><em>A dire il vero...</em></li>
+            <li><em>Il punto fondamentale è che...</em></li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="card-title">✋ Interrompere / Chiedere ascolto</div>
+          <ul class="bullet-list">
+            <li><span class="badge badge-fio">FIO</span> <em>Fammi finire di parlare!</em></li>
+            <li><span class="badge badge-fio">FIO</span> <em>Ascoltami un secondo, ti prego!</em></li>
+            <li><span class="badge badge-pad">PAD</span> <em>Ma fammi il piacere!</em></li>
+            <li><span class="badge badge-both">TUTTI</span> <em>Non gridare, parliamo con calma.</em></li>
+          </ul>
+        </article>
+        <article class="card">
+          <div class="card-title">⚡ Obiettare e ribattere</div>
+          <ul class="bullet-list">
+            <li><em>Capisco i tuoi sacrifici, ma...</em></li>
+            <li><em>D'altra parte devi considerare che...</em></li>
+            <li><em>Non c'entra assolutamente niente!</em></li>
+            <li><em>Nonostante quello che pensi...</em></li>
+          </ul>
+        </article>
+      </div>
+
+      <!-- CONGIUNTIVO BOOSTER -->
+      <div class="callout callout-purple" style="margin-top: 1.1rem;">
+        <div class="callout-title">⚡ Regola d'oro del Congiuntivo (per alzare il voto!)</div>
+        <p style="font-size: 0.92rem; margin-bottom: 0.45rem;">Opinione, emozione, dubbio o desiderio + <strong>CHE</strong> = <strong>Congiuntivo</strong>! (Attenzione: con <em>«Secondo me...»</em> e <em>«Per me...»</em> si usa invece l'Indicativo normale: <em>Secondo me è un errore</em>).</p>
+        <ul class="bullet-list">
+          <li><em>Credo che tu non mi <strong>capisca</strong>.</em> • <em>Penso che <strong>sia</strong> la scelta migliore per me.</em> • <em>Voglio che tu <strong>sia</strong> fiero di me.</em></li>
+          <li><em>Ho paura che un infortunio mi <strong>rovini</strong> la vita.</em> • <em>È importante che noi <strong>troviamo</strong> una soluzione.</em></li>
+        </ul>
+      </div>
+
+      <!-- 3 MÖGLICHE ENDEN -->
+      <div class="grid-3" style="margin-top: 1.1rem;">
+        <article class="card card-pro">
+          <div class="card-title">Opzione 1: Compromesso maturo</div>
+          <div class="card-sub">Consigliata per la prova</div>
+          <p style="font-size: 0.9rem;">Fioretto accetta di finire il campionato dando il massimo, mentre prepara gli esami di scuola. Il padre promette che a giugno rispetterà la sua scelta.</p>
+          <p style="font-size: 0.88rem; margin-top: 0.5rem; font-style: italic;"><span class="badge badge-pad">PADRE</span> «D'accordo... finisci questa stagione da campione e prendi buoni voti. A giugno deciderai tu, da uomo.»</p>
+        </article>
+
+        <article class="card card-fio">
+          <div class="card-title">Opzione 2: Rivelazione emotiva</div>
+          <div class="card-sub">Fedele al lato umano del testo</div>
+          <p style="font-size: 0.9rem;">Fioretto confessa con le lacrime agli occhi: <em>«Ho giocato solo perché tu mi volessi bene»</em>. Il padre capisce la sofferenza del figlio e l'amore vince sull'ambizione.</p>
+          <p style="font-size: 0.88rem; margin-top: 0.5rem; font-style: italic;"><span class="badge badge-pad">PADRE</span> «Non mi ero accorto di nulla... pensavo di farti felice. Prima di tutto sei mio figlio, non il mio campione.»</p>
+        </article>
+
+        <article class="card card-contra">
+          <div class="card-title">Opzione 3: Rottura aperta</div>
+          <div class="card-sub">Finale drammatico (stile rigore)</div>
+          <p style="font-size: 0.9rem;">Il padre rifiuta di capire, accusa Fioretto di vigliaccheria ed esce sbattendo la porta. Fioretto resta solo, ma finalmente libero.</p>
+          <p style="font-size: 0.88rem; margin-top: 0.5rem; font-style: italic;"><span class="badge badge-pad">PADRE</span> «Tu stai buttando via il tuo futuro! Finché vivi sotto questo tetto, non ti permetterò questa follia!»</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. TED TALK (3-5 MINUTEN) -->
+    <section class="section">
+      <div class="section-header">
+        <h2>3. Il «TED» (3–5 minuti): Realizzare i propri sogni e non quelli dei genitori</h2>
+        <span class="badge badge-b2">Struttura + Argomenti</span>
+      </div>
+
+      <div class="callout callout-amber">
+        <div class="callout-title">🎤 Come strutturare un discorso TED efficace (senza imparare a memoria)</div>
+        <p style="font-size: 0.92rem;">Un TED-Talk non è una lettura scolastica: parla al pubblico, usa pause, fai domande retoriche e collega la storia di Fioretto alla vita reale dei giovani di oggi.</p>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="card-title">1️⃣ Introduzione / Hook (ca. 45 sec.)</div>
+          <ul class="bullet-list">
+            <li><strong>Domanda provocatoria al pubblico:</strong> <em>«Vi siete mai chiesti quante scelte nella vostra vita siano davvero vostre e quante servano solo a non deludere i vostri genitori?»</em></li>
+            <li><strong>Aggancio a Fioretto:</strong> Raccontare in 2 frasi l'immagine di Fioretto sul dischetto dei Mondiali: campione agli occhi di tutti, ma infelice dentro.</li>
+            <li><strong>Tesi centrale:</strong> Ogni giovane ha il diritto e il dovere di costruire il proprio percorso, perché nessuno può vivere la vita di un altro.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-title">2️⃣ Il punto di vista dei genitori (ca. 45 sec.)</div>
+          <ul class="bullet-list">
+            <li><strong>Mostrare empatia e maturità:</strong> I genitori quasi sempre non agiscono per cattiveria, ma per amore, paura del futuro o desiderio di riscatto sociale.</li>
+            <li><strong>Sogni incompiuti:</strong> Spesso i genitori proiettano sui figli ciò che loro non hanno potuto realizzare (es. il padre di Fioretto con il calcio).</li>
+            <li><strong>Il pericolo:</strong> Confondere il <em>proprio</em> concetto di successo (soldi, prestigio) con la <em>felicità</em> del figlio.</li>
+          </ul>
+        </article>
+
+        <article class="card span-2">
+          <div class="card-title">3️⃣ Argomenti principali per il corpo centrale (2–2,5 min.)</div>
+          <div class="grid-2" style="margin-top: 0.5rem;">
+            <div>
+              <div class="arg-item">
+                <div class="arg-heading">A. Motivazione intrinseca vs. obbligo</div>
+                <p class="arg-quote">Senza passione vera si resiste solo finché c'è pressione esterna, ma dentro ci si sente «sonnambuli». La vera eccellenza nasce solo da ciò che amiamo fare.</p>
+              </div>
+              <div class="arg-item">
+                <div class="arg-heading">B. Salute mentale e pressione psicologica</div>
+                <p class="arg-quote">Vivere per soddisfare aspettative altrui genera ansia, senso di soffocamento e paura di fallire (proprio come la sciarpa stretta allo stadio).</p>
+              </div>
+            </div>
+            <div>
+              <div class="arg-item">
+                <div class="arg-heading">C. Il diritto di sbagliare in autonomia</div>
+                <p class="arg-quote">Scegliere la propria strada significa anche prendersi la responsabilità dei propri errori. È meglio fallire in un sogno proprio che avere successo in una prigione altrui.</p>
+              </div>
+              <div class="arg-item">
+                <div class="arg-heading">D. Esempi concreti dal mondo reale</div>
+                <p class="arg-quote">Chi è costretto a studiare Medicina o Giurisprudenza per tradizione familiare spesso abbandona dopo anni, mentre chi sceglie un mestiere artigianale, creativo o tecnico per passione trova realizzazione.</p>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card span-2 card-pro">
+          <div class="card-title">4️⃣ Conclusione ad effetto + Frasi TED (ca. 45 sec.)</div>
+          <div class="grid-2" style="margin-top: 0.4rem;">
+            <ul class="bullet-list">
+              <li><strong>Appello finale ai genitori:</strong> <em>«Non siate l'allenatore che urla dietro la rete, siate il sostegno che ascolta.»</em></li>
+              <li><strong>Appello ai giovani:</strong> <em>«Non aspettate la finale dei Mondiali per tirare il vostro rigore sopra la traversa: abbiate il coraggio di parlare prima!»</em></li>
+            </ul>
+            <ul class="bullet-list">
+              <li><strong>Frasi di passaggio (Connettivi TED):</strong></li>
+              <li><em>«Pensiamo per un attimo a...»</em> / <em>«C'è un secondo aspetto fondamentale...»</em></li>
+              <li><em>«Questo ci porta a una domanda chiave...»</em> / <em>«Per concludere, vorrei lasciarvi con un pensiero...»</em></li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. EIGENE MEINUNG -->
+    <section class="section">
+      <div class="section-header">
+        <h2>4. Il tuo punto di vista (Domande personali dell'insegnante)</h2>
+        <span class="badge badge-both">Breve &amp; chiaro</span>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="card-title">🤔 Come giudichi il comportamento di Fioretto?</div>
+          <ul class="bullet-list">
+            <li><strong>Comprensibile, ma tardivo:</strong> È comprensibile che da bambino non riuscisse a opporsi, ma ha aspettato troppo prima di parlare chiaramente con il padre.</li>
+            <li><strong>Il gesto finale:</strong> Sbagliare apposta il rigore dei Mondiali è estremo (delude compagni e tifosi), ma simbolicamente mostra quanto fosse disperato il suo bisogno di libertà.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-title">👨‍👦 Che ruolo dovrebbero avere i genitori?</div>
+          <ul class="bullet-list">
+            <li><strong>Consigliare sì, imporre no:</strong> I genitori hanno più esperienza e possono mostrare pro e contro (es. il valore di un piano B scolastico), ma la decisione finale spetta al figlio.</li>
+            <li><strong>Equilibrio tra talento e felicità:</strong> Un talento sportivo non deve mai cancellare l'istruzione o le relazioni sociali di un adolescente.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. VOKABELLISTE -->
+    <section class="section">
+      <div class="section-header">
+        <h2>5. Vocabolario ed espressioni per la discussione (esteso)</h2>
+      </div>
+
+      <div class="toolbar">
+        <input type="text" class="search-input" placeholder="🔍 Cerca espressione o ruolo (FIO / PAD)..." data-search-target="#vocab-mister tbody tr">
+        <button class="btn-outline" id="quiz-toggle">🧠 Quiz-Modus: Deutsch verdecken</button>
+      </div>
+
+      <div class="table-wrap" id="vocab-table-wrap">
+        <table class="vocab-table" id="vocab-mister">
+          <thead>
+            <tr>
+              <th style="width: 28%;">Espressione italiana</th>
+              <th style="width: 28%;">Traduzione tedesca</th>
+              <th style="width: 12%;">Ruolo</th>
+              <th style="width: 32%;">Contesto / Significato</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="vocab-it">deludere qn. / non deluderti</td>
+              <td class="vocab-de">jmd. enttäuschen / dich nicht enttäuschen</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Motivo per cui ha continuato a giocare per anni.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">sprecare / buttare via il talento</td>
+              <td class="vocab-de">das Talent verschwenden / wegwerfen</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Accusa del padre: buttare un dono naturale.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">sentirsi soffocare (la sciarpa)</td>
+              <td class="vocab-de">sich erstickt fühlen (der Schal)</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Metafora della pressione asfissiante del padre.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">un animale in gabbia (recintato)</td>
+              <td class="vocab-de">ein Tier im Gehege / eingesperrt</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Sensazione claustrofobica nel rettangolo di gioco.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">spaccare le labbra a gomitate</td>
+              <td class="vocab-de">die Lippen mit Ellbogen aufschlagen</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>La durezza fisica e i falli dei difensori avversari.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">scarpe bullonate &amp; vesciche</td>
+              <td class="vocab-de">Stollenschuhe &amp; Blasen</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Disagio fisico sotto la pioggia e il gelo.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">aggrappato alla rete metallica</td>
+              <td class="vocab-de">an den Maschendrahtzaun geklammert</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Immagine del padre che urla a bordo campo.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">fascetta di spugna e guanti arancioni</td>
+              <td class="vocab-de">Frottee-Stirnband &amp; orange Handschuhe</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Quando il padre si tuffava nel fango per allenarlo.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">rubare mutande per dispetto</td>
+              <td class="vocab-de">aus Bosheit Unterhosen klauen</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Clima rozzo e bullismo nello spogliatoio giovanile.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">guardare le nuvole (il cane Toto)</td>
+              <td class="vocab-de">den Wolken nachsehen (Hund Toto)</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Sensibilità poetica del bambino allo stadio.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">custodire come una reliquia</td>
+              <td class="vocab-de">wie eine Reliquie aufbewahren</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Il primo articolo di giornale nel portafoglio.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">comprare il diploma (basta pagare)</td>
+              <td class="vocab-de">das Diplom kaufen (nur zahlen)</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Disprezzo del padre per lo studio tradizionale.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">galoppare nelle praterie verdi</td>
+              <td class="vocab-de">auf grünen Wiesen galoppieren</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Metafora del padre: il figlio come un cavallo da corsa.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">belle macchine &amp; donne prosperose</td>
+              <td class="vocab-de">schöne Autos &amp; kurvige Frauen</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Discorsi banali e stereotipati del mondo del calcio.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">il treno passa una volta sola</td>
+              <td class="vocab-de">die Chance kommt nur einmal</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Urgenza dei 17 anni per sfondare.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">uno stipendio da fame / la mediocrità</td>
+              <td class="vocab-de">ein Hungerlohn / die Mittelmäßigkeit</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Paura del padre verso un lavoro normale d'ufficio.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">un infortunio grave (al ginocchio)</td>
+              <td class="vocab-de">eine schwere Verletzung (Knie)</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Il rischio reale di perdere tutto senza studi.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">avere un piano B sicuro</td>
+              <td class="vocab-de">einen sicheren Plan B haben</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Scuola, diploma vero e università.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">fumare una sigaretta dopo l'altra</td>
+              <td class="vocab-de">eine Zigarette nach der anderen rauchen</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Nervosismo del padre seduto in panchina.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">essere capocannoniere</td>
+              <td class="vocab-de">Torschützenkönig sein</td>
+              <td><span class="badge badge-text">TESTO</span></td>
+              <td>Successo sportivo di Fioretto (allievi e 4 volte in Serie A).</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">sfondare nel mondo del calcio</td>
+              <td class="vocab-de">den Durchbruch im Fußball schaffen</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>L'obiettivo prioritario del padre.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">essere accecato dai soldi / dal successo</td>
+              <td class="vocab-de">vom Geld / Erfolg geblendet sein</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Rimprovero al padre materialista.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">pretendere troppo da qualcuno</td>
+              <td class="vocab-de">zu viel von jemandem verlangen</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>L'eccessiva pressione psicologica sul figlio.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">prendere in mano la propria vita</td>
+              <td class="vocab-de">sein Leben selbst in die Hand nehmen</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Desiderio di autonomia ed emancipazione.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">il riscatto sociale della famiglia</td>
+              <td class="vocab-de">der soziale Aufstieg der Familie</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Uscire dalle difficoltà economiche grazie al calcio.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">apri gli occhi! / renditi conto!</td>
+              <td class="vocab-de">mach die Augen auf! / begreife es!</td>
+              <td><span class="badge badge-pad">PAD</span></td>
+              <td>Incitamento ruvido e frustrato durante la lite.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">essere fiero di me / renderti fiero</td>
+              <td class="vocab-de">stolz auf mich sein / dich stolz machen</td>
+              <td><span class="badge badge-both">ENTRAMBI</span></td>
+              <td>Nodo emotivo centrale del loro rapporto.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">non fa per me / non è la mia strada</td>
+              <td class="vocab-de">das ist nichts für mich / nicht mein Weg</td>
+              <td><span class="badge badge-fio">FIO</span></td>
+              <td>Rifiuto chiaro ma rispettoso del calcio.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">trovare un compromesso ragionevole</td>
+              <td class="vocab-de">einen vernünftigen Kompromiss finden</td>
+              <td><span class="badge badge-both">ENTRAMBI</span></td>
+              <td>Chiave per risolvere la disputa senza rottura.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">come un sonnambulo</td>
+              <td class="vocab-de">wie ein Schlafwandler</td>
+              <td><span class="badge badge-text">TESTO</span></td>
+              <td>Come Fioretto vive i dieci anni in Serie A, senza volontà.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">tirare il rigore sopra la traversa</td>
+              <td class="vocab-de">den Elfmeter über die Latte schießen</td>
+              <td><span class="badge badge-text">TESTO</span></td>
+              <td>Il gesto finale di ribellione e liberazione ai Mondiali.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FOOTER NAVIGATION -->
+    <footer class="page-footer">
+      <a href="2-amore-tecnologia.html" class="footer-btn">← 2. Amore &amp; Tech</a>
+      <a href="4-pro-o-contro.html" class="footer-btn">Prossimo modulo: 4. Pro o Contro →</a>
+    </footer>
+
+  </main>
+</body>
+</html>

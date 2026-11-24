@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1. Overtourism • Esame Orale Italiano</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+
+  <!-- TOP NAVIGATION -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <nav class="nav-links" aria-label="Moduli esame">
+        <a href="1-overtourism.html" class="nav-link active">1. Overtourism</a>
+        <a href="2-amore-tecnologia.html" class="nav-link">2. Amore &amp; Tech</a>
+        <a href="3-il-mister.html" class="nav-link">3. Il Mister</a>
+        <a href="4-pro-o-contro.html" class="nav-link">4. Pro o Contro</a>
+        <a href="5-impostori.html" class="nav-link">5. Impostori</a>
+      </nav>
+
+      <div class="timer-widget" title="Prüfungs-Timer zum Üben">
+        <span class="timer-display" id="timer-display">01:00</span>
+        <button class="timer-btn" data-time="60">1'</button>
+        <button class="timer-btn" data-time="180">3'</button>
+        <button class="timer-btn" data-time="240">4'</button>
+        <button class="timer-btn primary" id="timer-start">Start</button>
+        <button class="timer-btn" id="timer-reset">↺</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- HERO BANNER -->
+    <section class="hero">
+      <span class="hero-tag">Modulo 1 • I Trimestre • Livello B2</span>
+      <h1>Overtourism: Sulle Dolomiti il turismo è sfuggito di mano</h1>
+      <p>Dossier completo per la prova orale: sintesi a punti chiave, problemi e criticità, soluzioni proposte, argomentazioni personali e lessico B2.</p>
+    </section>
+
+    <!-- CHECKLISTE PRÜFUNGSANFORDERUNGEN -->
+    <section class="checklist-box">
+      <div class="checklist-title">🎯 Obiettivi per l'esame (Prof.ssa Ianeselli)</div>
+      <ul class="checklist-items">
+        <li>✅ Raccontare il testo con <strong>scioltezza</strong> ed espressioni di <strong>livello B2</strong></li>
+        <li>✅ Spiegare chiaramente i <strong>problemi</strong> descritti nel testo</li>
+        <li>✅ Esporre le <strong>possibili soluzioni</strong> e le diverse posizioni</li>
+        <li>✅ Esprimere il <strong>proprio punto di vista</strong> con argomenti efficaci ed esempi pertinenti</li>
+      </ul>
+    </section>
+
+    <!-- 1. NACHERZÄHLUNG IN ETAPPEN -->
+    <section class="section">
+      <div class="section-header">
+        <h2>1. Raccontare il testo: struttura logica (Punti chiave)</h2>
+        <span class="badge badge-b2">Per entrambi</span>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="card-title">📸 A. Il caso simbolo: il rifugio Friedrich August</div>
+          <div class="card-sub">Sopra la Val di Fassa, a 2.300 m di quota</div>
+          <ul class="bullet-list">
+            <li><strong>L'effetto virale:</strong> Un video su Instagram (quasi <strong>40 milioni di visualizzazioni</strong>) sul bancone pieno di krapfen («bomboloni») ha reso il rifugio famoso in tutto il mondo.</li>
+            <li><strong>Scene da parco tematico:</strong> Ogni mattina si formano code lunghissime di centinaia o migliaia di turisti solo per comprare un dolce e scattare la foto perfetta.</li>
+            <li><strong>Turismo superficiale:</strong> Molti arrivano in funivia, camminano appena <strong>10 minuti</strong>, sono poco attrezzati e tornano subito indietro senza vivere la vera montagna.</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-title">📱 B. Gli «spot imperdibili» e la spettacolarizzazione</div>
+          <div class="card-sub">Lago di Braies, Tre Cime di Lavaredo, Seceda, Lago di Carezza</div>
+          <ul class="bullet-list">
+            <li><strong>Montagna come set fotografico:</strong> Influencer e content creator spiegano l'ora esatta e l'abbigliamento tecnico adatto (moda <em>gorpcore</em>: vestiti da trekking usati anche in città).</li>
+            <li><strong>«Cartoline» standardizzate:</strong> Le Dolomiti vengono ridotte a immagini intercambiabili e spettacolari, ignorando la complessità geografica, storica e culturale del territorio.</li>
+            <li><strong>Ruolo degli algoritmi:</strong> Social e chatbot IA convogliano tutti negli stessi identici punti, creando l'effetto «gregge».</li>
+          </ul>
+        </article>
+
+        <article class="card span-2">
+          <div class="card-title">📈 C. Come si è passati dal turismo «normale» all'iperturismo</div>
+          <div class="card-sub">Due momenti di svolta e numeri in forte crescita</div>
+          <div class="grid-2" style="margin-top: 0.5rem;">
+            <ul class="bullet-list">
+              <li><strong>Il modello tradizionale:</strong> Per decenni gli investimenti in alberghi, impianti di risalita, strade e piste hanno portato lavoro e benessere in modo gestibile.</li>
+              <li><strong>Prima svolta (2009):</strong> Le Dolomiti diventano <strong>Patrimonio UNESCO</strong>. Invece di attirare solo veri appassionati, arrivano molti visitatori che non conoscono le regole dell'ambiente alpino.</li>
+            </ul>
+            <ul class="bullet-list">
+              <li><strong>Seconda svolta (post-pandemia):</strong> Fine dei lockdown (voglia di aria aperta), estati roventi in città, visibilità delle <strong>Olimpiadi Milano-Cortina</strong> e «Instagram effect».</li>
+              <li><strong>I dati (2022–2025):</strong> +30% di turisti totali e <strong>+40% di stranieri</strong>. Cresce il turismo «mordi e fuggi»: soggiorni di una sola notte per un tour veloce degli spot famosi.</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 2. PROBLEME UND LÖSUNGEN -->
+    <section class="section">
+      <div class="section-header">
+        <h2>2. I problemi e le possibili soluzioni del testo</h2>
+        <span class="badge badge-b2">Nucleo dell'esame</span>
+      </div>
+
+      <div class="grid-2">
+        <!-- PROBLEME -->
+        <article class="card card-contra">
+          <div class="card-title">⚠️ I problemi principali e le critiche</div>
+          <div class="card-sub">Conseguenze ambientali, sociali e culturali</div>
+
+          <div class="arg-item">
+            <div class="arg-heading">1. Impatto ambientale e sicurezza</div>
+            <p class="arg-quote">Erosione dei sentieri, disturbo a flora e fauna, inquinamento. Molti turisti inesperti e mal attrezzati affrontano l'alta quota creando situazioni di pericolo.</p>
+          </div>
+
+          <div class="arg-item">
+            <div class="arg-heading">2. Disagi per i residenti &amp; rischio economico</div>
+            <p class="arg-quote">Strade bloccate dal traffico fin dalle prime ore del mattino. Chi non lavora nel turismo subisce solo i disagi. Dal 2024 anche gli albergatori temono che il caos allontani i clienti migliori.</p>
+          </div>
+
+          <div class="arg-item">
+            <div class="arg-heading">3. «Non-luoghi» e «turismo cafone» (Annibale Salsa)</div>
+            <p class="arg-quote">L'antropologo ed ex presidente CAI osserva che la montagna reale viene sostituita da una «montagna virtuale». Crescono maleducazione, rifiuti abbandonati, fuochi in zone a rischio, scritte su rocce/alberi e bivacchi sporchi.</p>
+          </div>
+
+          <div class="arg-item">
+            <div class="arg-heading">4. Sistema consumistico e responsabilità locali (Lacasella &amp; Casanova)</div>
+            <p class="arg-quote">Lo scrittore <strong>Pietro Lacasella</strong> ricorda che è il sistema a spingere la gente a 2.300 m per un bombolone. <strong>Luigi Casanova</strong> (Mountain Wilderness) accusa l'«imprenditoria degli affamati»: funivie come autostrade, ferrate artificiali, voli in elicottero, ostriche in rifugio e aperitivi in seggiovia (Val Gardena), che cancellano il senso del limite.</p>
+          </div>
+        </article>
+
+        <!-- LÖSUNGEN -->
+        <article class="card card-pro">
+          <div class="card-title">💡 Le possibili soluzioni e proposte</div>
+          <div class="card-sub">Misure già testate e idee per il futuro (manca ancora una strategia comune)</div>
+
+          <div class="arg-item">
+            <div class="arg-heading">1. Prenotazioni e accessi contingentati</div>
+            <p class="arg-quote">Già introdotti sistemi di prenotazione e biglietti d'ingresso in punti critici come il <strong>Lago di Braies</strong> e le <strong>Tre Cime di Lavaredo</strong> per limitare il numero massimo di visitatori.</p>
+          </div>
+
+          <div class="arg-item">
+            <div class="arg-heading">2. Contributo d'accesso e trasporto pubblico (Walter De Cassan)</div>
+            <p class="arg-quote">Il presidente di Federalberghi Belluno propone un ticket d'ingresso per tutto il comprensorio UNESCO (stile parchi nazionali USA) per finanziare i mezzi pubblici e <strong>dimezzare le auto in 10–15 anni</strong>. A differenza di Venezia (dove il ticket 2024 non ha ridotto i flussi), nelle Dolomiti l'affollamento è concentrato in poche settimane e pochi luoghi.</p>
+          </div>
+
+          <div class="arg-item">
+            <div class="arg-heading">3. Regolare gli affitti brevi &amp; rivedere il marchio UNESCO</div>
+            <p class="arg-quote">L'<strong>ASAT</strong> (Trentino) vuole limitare gli affitti brevi (es. Airbnb). Il Comitato per la salvaguardia dei passi dolomitici ha provocatoriamente proposto perfino di <strong>rinunciare al titolo UNESCO</strong>.</p>
+          </div>
+
+          <div class="arg-item">
+            <div class="arg-heading">4. Stop agli influencer ed equilibrio territoriale (IDM &amp; Berger)</div>
+            <p class="arg-quote">L'agenzia altoatesina <strong>IDM</strong> ha smesso di collaborare con gli influencer per ridurre l'effetto gregge. <strong>Klaus Berger</strong> (Unione Albergatori Alto Adige) avverte: alcune valli poco note avrebbero bisogno di più turisti, ma bisogna promuoverle con equilibrio per non snaturarne la tranquillità.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 3. EIGENE MEINUNG & KONKRETE BEISPIELE -->
+    <section class="section">
+      <div class="section-header">
+        <h2>3. Il tuo punto di vista: argomenti efficaci ed esempi</h2>
+        <span class="badge badge-both">Per la discussione finale</span>
+      </div>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="card-title">🗣️ Posizione equilibrata (Consigliata all'esame)</div>
+          <ul class="bullet-list">
+            <li><strong>Non demonizzare il turismo:</strong> In regioni come l'Alto Adige e il Trentino il turismo è un pilastro economico fondamentale che garantisce lavoro e benessere alle valli.</li>
+            <li><strong>Passare dalla quantità alla qualità:</strong> Il problema non è il turista in sé, ma il turismo veloce e inconsapevole (<em>«mordi e fuggi»</em>) che consuma il paesaggio in due ore per una foto su TikTok.</li>
+            <li><strong>Responsabilità condivisa:</strong> Servono regole chiare (navette obbligatorie al posto delle auto, limiti di accesso), ma anche i rifugi e gli operatori locali devono evitare di trasformare la montagna in un luna park.</li>
+          </ul>
+          <div class="example-pill">
+            <strong>Esempio pertinente:</strong> «Pensiamo all'Alpe di Siusi o al Lago di Braies: chiudere le strade alle auto private nelle ore centrali e potenziare gli autobus non danneggia l'economia, anzi migliora la qualità dell'esperienza per chi ama davvero la montagna.»
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-title">🧩 Connettivi e frasi B2 pronte all'uso</div>
+          <ul class="bullet-list">
+            <li><strong>Introdurre il tema:</strong> <em>«L'articolo mette in luce un paradosso attuale: il successo sui social rischia di distruggere ciò che rende uniche le Dolomiti.»</em></li>
+            <li><strong>Spiegare cause ed effetti:</strong> <em>«Ciò è dovuto principalmente a...» / «Di conseguenza, si crea un circolo vizioso in cui...»</em></li>
+            <li><strong>Esprimere un bilancio critico:</strong> <em>«Da un lato è innegabile che il turismo porti ricchezza; dall'altro, però, non possiamo ignorare il costo ambientale e sociale per i residenti.»</em></li>
+            <li><strong>Proporre soluzioni:</strong> <em>«A mio avviso, la strada più efficace consiste nel regolamentare gli accessi e sensibilizzare i visitatori...»</em></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. VOKABELLISTE B2 -->
+    <section class="section">
+      <div class="section-header">
+        <h2>4. Lessico ed espressioni di livello B2</h2>
+      </div>
+
+      <div class="toolbar">
+        <input type="text" class="search-input" placeholder="🔍 Cerca parola o significato (IT / DE)..." data-search-target="#vocab-overtourism tbody tr">
+        <button class="btn-outline" id="quiz-toggle">🧠 Quiz-Modus: Deutsch verdecken</button>
+      </div>
+
+      <div class="table-wrap" id="vocab-table-wrap">
+        <table class="vocab-table" id="vocab-overtourism">
+          <thead>
+            <tr>
+              <th style="width: 28%;">Espressione italiana (B2)</th>
+              <th style="width: 28%;">Traduzione tedesca</th>
+              <th style="width: 44%;">Contesto / Uso all'esame</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="vocab-it">l'iperturismo / il sovraffollamento</td>
+              <td class="vocab-de">der Übertourismus / die Überfüllung</td>
+              <td>Fenomeno centrale dell'articolo (= <em>overtourism</em>).</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">sfuggire di mano</td>
+              <td class="vocab-de">außer Kontrolle geraten</td>
+              <td>«La situazione è sfuggita di mano» (il modello non è più gestibile).</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">prendere d'assalto (una meta)</td>
+              <td class="vocab-de">ein Reiseziel überrennen / stürmen</td>
+              <td>«Le Dolomiti sono prese d'assalto da migliaia di visitatori.»</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">i flussi turistici</td>
+              <td class="vocab-de">die Touristenströme</td>
+              <td>«Bisogna distribuire meglio i flussi turistici nelle diverse valli.»</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">il turismo «mordi e fuggi»</td>
+              <td class="vocab-de">der Kurzzeit- / Tagestourismus („Zupacken &amp; Weg“)</td>
+              <td>Turisti che restano una sola notte o poche ore solo per fare foto.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">l'effetto «gregge»</td>
+              <td class="vocab-de">der Herdeneffekt</td>
+              <td>Quando algoritmi e influencer spingono tutti nello stesso posto.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">convogliare (le persone verso...)</td>
+              <td class="vocab-de">(Menschenströme) lenken / leiten</td>
+              <td>«I social media convogliano i turisti sempre negli stessi spot.»</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">diventare virale</td>
+              <td class="vocab-de">viral gehen</td>
+              <td>Il video dei krapfen al rifugio Friedrich August (40 milioni di visualizzazioni).</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">il parco tematico</td>
+              <td class="vocab-de">der Freizeitpark / Themenpark</td>
+              <td>Critica: la montagna trattata come un luna park, non come natura fragile.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">il «non-luogo»</td>
+              <td class="vocab-de">der „Nicht-Ort“ (seelenloser Ort)</td>
+              <td>Termine dell'antropologo Salsa: spazio privato della sua identità locale.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">il «turismo cafone»</td>
+              <td class="vocab-de">rücksichtsloser / ungehobelter Tourismus</td>
+              <td>Comportamenti maleducati: rifiuti lasciati sui sentieri, fuochi, scritte.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">snaturare (un territorio)</td>
+              <td class="vocab-de">(eine Region) verfremden / ihren Charakter zerstören</td>
+              <td>Trasformare una valle tranquilla rendendola artificiale e caotica.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">l'imprenditoria degli affamati</td>
+              <td class="vocab-de">gieriges Unternehmertum</td>
+              <td>Espressione di Luigi Casanova contro impianti estremi e lusso in quota.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">in alta quota</td>
+              <td class="vocab-de">im Hochgebirge / in großer Höhe</td>
+              <td>«Molti salgono in alta quota senza attrezzatura adeguata.»</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">l'ecosistema fragile / delicato</td>
+              <td class="vocab-de">das empfindliche Ökosystem</td>
+              <td>«L'eccessivo afflusso danneggia un ecosistema molto delicato.»</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">gli impianti di risalita</td>
+              <td class="vocab-de">die Aufstiegsanlagen / Bergbahnen</td>
+              <td>Funivie e seggiovie che facilitano l'accesso rapido alla montagna.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">il contributo / biglietto d'accesso</td>
+              <td class="vocab-de">die Eintrittsgebühr / Zugangsabgabe</td>
+              <td>Proposta di De Cassan (sul modello dei parchi USA) e testata a Venezia.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">gli affitti brevi</td>
+              <td class="vocab-de">die Kurzzeitvermietungen (z. B. Airbnb)</td>
+              <td>L'ASAT in Trentino vorrebbe limitarli per ridurre la pressione sui paesi.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">potenziare il trasporto pubblico</td>
+              <td class="vocab-de">den öffentlichen Nahverkehr ausbauen</td>
+              <td>Soluzione per dimezzare il traffico automobilistico in 10–15 anni.</td>
+            </tr>
+            <tr>
+              <td class="vocab-it">trovare un equilibrio</td>
+              <td class="vocab-de">ein Gleichgewicht finden</td>
+              <td>«Bisogna trovare un equilibrio tra economia turistica e tutela ambientale.»</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- FOOTER NAVIGATION -->
+    <footer class="page-footer">
+      <span style="color: var(--text-light); font-size: 0.88rem;">Modulo 1 di 5 • Overtourism</span>
+      <a href="2-amore-tecnologia.html" class="footer-btn">Prossimo modulo: 2. Amore e tecnologia →</a>
+    </footer>
+
+  </main>
+</body>
+</html>

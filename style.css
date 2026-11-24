@@ -1,0 +1,766 @@
+/* ==========================================================================
+   ESERCITARE IL PARLATO • I TRIMESTRE
+   Einheitliches Stylesheet für alle 5 Module
+   ========================================================================== */
+
+:root {
+  --bg-page: #f1f5f9;
+  --bg-card: #ffffff;
+  --bg-subtle: #f8fafc;
+  --text-main: #1e293b;
+  --text-muted: #475569;
+  --text-light: #64748b;
+  --border: #e2e8f0;
+  --border-strong: #cbd5e1;
+
+  /* Akzentfarben */
+  --primary: #1d4ed8;
+  --primary-dark: #1e3a8a;
+  --primary-light: #eff6ff;
+  --primary-border: #bfdbfe;
+
+  /* Fioretto (Kollegin) */
+  --fio: #0284c7;
+  --fio-bg: #f0f9ff;
+  --fio-border: #bae6fd;
+
+  /* Padre (Du) */
+  --pad: #dc2626;
+  --pad-bg: #fef2f2;
+  --pad-border: #fecaca;
+
+  /* Pro / Lösungen */
+  --pro: #15803d;
+  --pro-bg: #f0fdf4;
+  --pro-border: #bbf7d0;
+
+  /* Contra / Probleme */
+  --contra: #be123c;
+  --contra-bg: #fff1f2;
+  --contra-border: #fecdd3;
+
+  /* Tipps / Grammatik / Beispiele */
+  --amber: #b45309;
+  --amber-bg: #fffbeb;
+  --amber-border: #fde68a;
+
+  /* Connettivi / Struktur */
+  --purple: #6d28d9;
+  --purple-bg: #f5f3ff;
+  --purple-border: #ddd6fe;
+
+  --radius: 12px;
+  --radius-sm: 8px;
+  --shadow: 0 4px 6px -1px rgba(15, 23, 42, 0.06), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--bg-page);
+  color: var(--text-main);
+  line-height: 1.6;
+  padding-bottom: 4rem;
+}
+
+/* ==========================================================================
+   TOP NAVIGATION & TIMER BAR
+   ========================================================================== */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.05);
+}
+
+.topbar-inner {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0.65rem 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 600;
+  padding: 0.45rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  transition: all 0.18s ease;
+  white-space: nowrap;
+}
+
+.nav-link:hover {
+  background: var(--primary-light);
+  color: var(--primary);
+}
+
+.nav-link.active {
+  background: var(--primary);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(29, 78, 216, 0.3);
+}
+
+/* Prüfungs-Timer im Header */
+.timer-widget {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-strong);
+  padding: 0.3rem 0.65rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.timer-display {
+  font-family: 'Consolas', 'Courier New', monospace;
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--primary-dark);
+  min-width: 48px;
+  text-align: center;
+}
+
+.timer-display.timer-finished {
+  color: var(--pad);
+  animation: pulse 0.8s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+.timer-btn {
+  border: 1px solid var(--border-strong);
+  background: #ffffff;
+  color: var(--text-main);
+  font-size: 0.76rem;
+  font-weight: 600;
+  padding: 0.22rem 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.timer-btn:hover {
+  background: var(--primary-light);
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.timer-btn.primary {
+  background: var(--primary);
+  color: #fff;
+  border-color: var(--primary);
+}
+
+.timer-btn.primary:hover {
+  background: var(--primary-dark);
+}
+
+/* ==========================================================================
+   MAIN CONTAINER & HERO BANNER
+   ========================================================================== */
+
+.container {
+  max-width: 1180px;
+  margin: 1.5rem auto 0;
+  padding: 0 1.25rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 55%, #0284c7 100%);
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 2rem 2.25rem;
+  box-shadow: var(--shadow-lg);
+  margin-bottom: 1.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero.hero-green {
+  background: linear-gradient(135deg, #14532d 0%, #15803d 55%, #0d9488 100%);
+}
+
+.hero.hero-rose {
+  background: linear-gradient(135deg, #881337 0%, #be123c 55%, #e11d48 100%);
+}
+
+.hero.hero-purple {
+  background: linear-gradient(135deg, #4c1d95 0%, #6d28d9 55%, #2563eb 100%);
+}
+
+.hero.hero-amber {
+  background: linear-gradient(135deg, #78350f 0%, #b45309 55%, #d97706 100%);
+}
+
+.hero-tag {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  color: #ffffff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.28rem 0.75rem;
+  border-radius: 999px;
+  margin-bottom: 0.75rem;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 0.45rem;
+}
+
+.hero p {
+  font-size: 1.02rem;
+  opacity: 0.92;
+  max-width: 820px;
+}
+
+/* ==========================================================================
+   SECTIONS & HEADINGS
+   ========================================================================== */
+
+.section {
+  margin-bottom: 2.25rem;
+}
+
+.section-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  border-bottom: 2px solid var(--primary-dark);
+  padding-bottom: 0.45rem;
+  margin-bottom: 1.15rem;
+}
+
+.section-header h2 {
+  font-size: 1.32rem;
+  font-weight: 800;
+  color: var(--primary-dark);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+/* ==========================================================================
+   CHECKLIST & CALLOUT BOXES
+   ========================================================================== */
+
+.checklist-box {
+  background: #ffffff;
+  border: 1px solid var(--primary-border);
+  border-left: 5px solid var(--primary);
+  border-radius: var(--radius);
+  padding: 1.1rem 1.35rem;
+  margin-bottom: 1.75rem;
+  box-shadow: var(--shadow);
+}
+
+.checklist-title {
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+
+.checklist-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem 1.4rem;
+  list-style: none;
+}
+
+.checklist-items li {
+  font-size: 0.94rem;
+  color: var(--text-main);
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.callout {
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.1rem;
+  border: 1px solid var(--border);
+}
+
+.callout-purple {
+  background: var(--purple-bg);
+  border-color: var(--purple-border);
+  border-left: 4px solid var(--purple);
+}
+
+.callout-amber {
+  background: var(--amber-bg);
+  border-color: var(--amber-border);
+  border-left: 4px solid var(--amber);
+}
+
+.callout-blue {
+  background: var(--primary-light);
+  border-color: var(--primary-border);
+  border-left: 4px solid var(--primary);
+}
+
+.callout-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.4rem;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+/* ==========================================================================
+   GRIDS & CARDS
+   ========================================================================== */
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+@media (max-width: 880px) {
+  .grid-2, .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.2rem 1.35rem;
+  box-shadow: var(--shadow);
+}
+
+.card.span-2 {
+  grid-column: span 2;
+}
+
+@media (max-width: 880px) {
+  .card.span-2 {
+    grid-column: span 1;
+  }
+}
+
+.card-title {
+  font-size: 1.06rem;
+  font-weight: 700;
+  color: var(--text-main);
+  margin-bottom: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card-sub {
+  font-size: 0.86rem;
+  color: var(--text-light);
+  font-style: italic;
+  margin-top: -0.4rem;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px dashed var(--border);
+}
+
+/* Farbige Karten-Varianten */
+.card-pro {
+  background: var(--pro-bg);
+  border-color: var(--pro-border);
+  border-top: 4px solid var(--pro);
+}
+
+.card-contra {
+  background: var(--contra-bg);
+  border-color: var(--contra-border);
+  border-top: 4px solid var(--contra);
+}
+
+.card-fio {
+  background: #ffffff;
+  border-color: var(--fio-border);
+  border-top: 4px solid var(--fio);
+}
+
+.card-pad {
+  background: #ffffff;
+  border-color: var(--pad-border);
+  border-top: 4px solid var(--pad);
+}
+
+.card-amber {
+  background: var(--amber-bg);
+  border-color: var(--amber-border);
+  border-top: 4px solid var(--amber);
+}
+
+/* ==========================================================================
+   LISTS, NUMBERED ARGUMENTS & QUOTES
+   ========================================================================== */
+
+.bullet-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.bullet-list li {
+  position: relative;
+  padding-left: 1.15rem;
+  font-size: 0.94rem;
+}
+
+.bullet-list li::before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.card-pro .bullet-list li::before { color: var(--pro); }
+.card-contra .bullet-list li::before { color: var(--contra); }
+.card-fio .bullet-list li::before { color: var(--fio); }
+.card-pad .bullet-list li::before { color: var(--pad); }
+
+.arg-item {
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.arg-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.arg-heading {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  margin-bottom: 0.2rem;
+}
+
+.arg-quote {
+  font-size: 0.91rem;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.example-pill {
+  margin-top: 0.75rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--amber);
+  padding: 0.55rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.88rem;
+}
+
+/* ==========================================================================
+   BADGES & TAGS
+   ========================================================================== */
+
+.badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.16rem 0.5rem;
+  border-radius: 6px;
+  white-space: nowrap;
+}
+
+.badge-fio {
+  background: var(--fio-bg);
+  color: var(--fio);
+  border: 1px solid var(--fio-border);
+}
+
+.badge-pad {
+  background: var(--pad-bg);
+  color: var(--pad);
+  border: 1px solid var(--pad-border);
+}
+
+.badge-both {
+  background: var(--purple-bg);
+  color: var(--purple);
+  border: 1px solid var(--purple-border);
+}
+
+.badge-text {
+  background: #f1f5f9;
+  color: #334155;
+  border: 1px solid #cbd5e1;
+}
+
+.badge-b2 {
+  background: var(--primary-light);
+  color: var(--primary);
+  border: 1px solid var(--primary-border);
+}
+
+.badge-pro {
+  background: var(--pro-bg);
+  color: var(--pro);
+  border: 1px solid var(--pro-border);
+}
+
+.badge-contra {
+  background: var(--contra-bg);
+  color: var(--contra);
+  border: 1px solid var(--contra-border);
+}
+
+/* ==========================================================================
+   VOCABULARY TABLE & SEARCH / QUIZ CONTROLS
+   ========================================================================== */
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 220px;
+  max-width: 380px;
+  padding: 0.5rem 0.85rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+  background: #ffffff;
+  color: var(--text-main);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(29, 78, 216, 0.12);
+}
+
+.btn-outline {
+  background: #ffffff;
+  border: 1px solid var(--border-strong);
+  color: var(--text-main);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 0.45rem 0.9rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.btn-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  background: var(--primary-light);
+}
+
+.btn-outline.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+.table-wrap {
+  background: #ffffff;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+
+.vocab-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.91rem;
+}
+
+.vocab-table thead th {
+  background: var(--primary-dark);
+  color: #ffffff;
+  text-align: left;
+  padding: 0.75rem 0.95rem;
+  font-weight: 700;
+  font-size: 0.86rem;
+}
+
+.vocab-table tbody tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.vocab-table tbody tr:nth-child(even) {
+  background: var(--bg-subtle);
+}
+
+.vocab-table tbody tr:hover {
+  background: var(--primary-light);
+}
+
+.vocab-table td {
+  padding: 0.65rem 0.95rem;
+  vertical-align: top;
+}
+
+.vocab-it {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* Selbsttest-Blur für deutsche Spalte */
+.quiz-active .vocab-de {
+  filter: blur(5px);
+  user-select: none;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+.quiz-active .vocab-de:hover,
+.quiz-active .vocab-de.revealed {
+  filter: blur(0);
+}
+
+/* ==========================================================================
+   FILTER PILLS (für 20 Themen in Modul 4)
+   ========================================================================== */
+
+.filter-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.pill-btn {
+  border: 1px solid var(--border-strong);
+  background: #ffffff;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 0.35rem 0.8rem;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pill-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.pill-btn.active {
+  background: var(--primary);
+  color: #ffffff;
+  border-color: var(--primary);
+}
+
+/* ==========================================================================
+   FOOTER & NAVIGATION LINKS BOTTOM
+   ========================================================================== */
+
+.page-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-strong);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  text-decoration: none;
+  background: #ffffff;
+  border: 1px solid var(--border-strong);
+  color: var(--text-main);
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 0.6rem 1.1rem;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow);
+  transition: all 0.15s ease;
+}
+
+.footer-btn:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   PRINT STYLES
+   ========================================================================== */
+
+@media print {
+  .topbar, .toolbar, .page-footer, .filter-pills {
+    display: none !important;
+  }
+  body {
+    background: #ffffff;
+    padding: 0;
+  }
+  .card, .table-wrap, .checklist-box {
+    box-shadow: none;
+    break-inside: avoid;
+  }
+  .quiz-active .vocab-de {
+    filter: none !important;
+  }
+}
